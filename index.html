@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>RED LINE — Премиум автосервис</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">RED<span>LINE</span></div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    <p>Загрузка...</p>
+  </div>
+</div>
+
+<div id="cursorGlow"></div>
+
+<canvas id="particles"></canvas>
+
+<header class="navbar" id="navbar">
+  <a href="#" class="logo">RED<span>LINE</span></a>
+  <nav>
+    <a href="#services">Услуги</a>
+    <a href="#why">Почему мы</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#pricing">Цены</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+  <a href="#contact" class="btn btn-small">Записаться</a>
+  <button class="burger" id="burger">☰</button>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge reveal">🔥 Сервис №1 в Москве</div>
+    <h1 class="reveal">
+      <span class="gradient-text">RED LINE</span><br>
+      <span id="typewriter"></span>
+    </h1>
+    <p class="reveal">Профессиональный ремонт и тюнинг автомобилей любой сложности. Только оригинальные запчасти, гарантия на все работы.</p>
+    <div class="hero-buttons reveal">
+      <a href="#contact" class="btn btn-primary">Записаться онлайн</a>
+      <a href="#services" class="btn btn-outline">Наши услуги</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div><strong data-count="15">0</strong>+<span>лет опыта</span></div>
+      <div><strong data-count="8500">0</strong>+<span>клиентов</span></div>
+      <div><strong data-count="98">0</strong>%<span>довольны</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-car">
+      <img
+        src="https://images.pexels.com/photos/13065690/pexels-photo-13065690.jpeg?auto=compress&cs=tinysrgb&w=1200"
+        alt="Автомобиль в автосервисе"
+        loading="eager"
+        onerror="this.src='https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=1200'"
+      >
+    </div>
+    <div class="floating-badge badge-1">✓ Гарантия 2 года</div>
+    <div class="floating-badge badge-2">⚡ Работаем с 2010 года</div>
+  </div>
+  <div class="scroll-indicator"><span></span></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>РЕМОНТ ДВИГАТЕЛЯ</span><span>•</span>
+    <span>ТЮНИНГ</span><span>•</span>
+    <span>ДИАГНОСТИКА</span><span>•</span>
+    <span>КУЗОВНОЙ РЕМОНТ</span><span>•</span>
+    <span>ЗАМЕНА МАСЛА</span><span>•</span>
+    <span>ШИНОМОНТАЖ</span><span>•</span>
+    <span>РЕМОНТ ДВИГАТЕЛЯ</span><span>•</span>
+    <span>ТЮНИНГ</span><span>•</span>
+    <span>ДИАГНОСТИКА</span><span>•</span>
+    <span>КУЗОВНОЙ РЕМОНТ</span><span>•</span>
+    <span>ЗАМЕНА МАСЛА</span><span>•</span>
+    <span>ШИНОМОНТАЖ</span><span>•</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="section-header reveal">
+    <span class="section-tag">ЧТО МЫ ДЕЛАЕМ</span>
+    <h2>Наши <span class="gradient-text">услуги</span></h2>
+    <p>Полный спектр работ — от планового ТО до сложного тюнинга</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal" data-tilt>
+      <div class="service-icon">🔧</div>
+      <h3>Ремонт двигателя</h3>
+      <p>Капитальный и текущий ремонт двигателей всех марок. Диагностика, замена, восстановление.</p>
+      <a href="#contact" class="service-link">Узнать цену →</a>
+    </div>
+    <div class="service-card reveal" data-tilt>
+      <div class="service-icon">⚡</div>
+      <h3>Тюнинг и доработки</h3>
+      <p>Чип-тюнинг, установка обвесов, апгрейд подвески и выхлопной системы.</p>
+      <a href="#contact" class="service-link">Узнать цену →</a>
+    </div>
+    <div class="service-card reveal" data-tilt>
+      <div class="service-icon">🩺</div>
+      <h3>Компьютерная диагностика</h3>
+      <p>Полная проверка всех систем автомобиля на современном оборудовании.</p>
+      <a href="#contact" class="service-link">Узнать цену →</a>
+    </div>
+    <div class="service-card reveal" data-tilt>
+      <div class="service-icon">🎨</div>
+      <h3>Кузовной ремонт</h3>
+      <p>Покраска, рихтовка, полировка. Восстановим кузов до заводского состояния.</p>
+      <a href="#contact" class="service-link">Узнать цену →</a>
+    </div>
+    <div class="service-card reveal" data-tilt>
+      <div class="service-icon">🛞</div>
+      <h3>Шиномонтаж</h3>
+      <p>Сезонная замена шин, балансировка, правка дисков. Быстро и аккуратно.</p>
+      <a href="#contact" class="service-link">Узнать цену →</a>
+    </div>
+    <div class="service-card reveal" data-tilt>
+      <div class="service-icon">🛡️</div>
+      <h3>Плановое ТО</h3>
+      <p>Замена масла, фильтров, жидкостей по регламенту производителя.</p>
+      <a href="#contact" class="service-link">Узнать цену →</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section section-alt" id="why">
+  <div class="why-grid">
+    <div class="why-visual reveal">
+      <div class="why-circle">
+        <div class="why-circle-inner">
+          <span class="big-number" data-count="15">0</span>
+          <span class="big-label">лет<br>на рынке</span>
+        </div>
+      </div>
+      <div class="rotating-gear">⚙️</div>
+    </div>
+    <div class="why-content">
+      <div class="section-header left reveal">
+        <span class="section-tag">ПОЧЕМУ МЫ</span>
+        <h2>Доверьте нам свой <span class="gradient-text">автомобиль</span></h2>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-icon">🏆</div>
+        <div><h4>Оригинальные запчасти</h4><p>Работаем только с проверенными поставщиками. Гарантия на все детали.</p></div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-icon">⏱️</div>
+        <div><h4>Быстрый ремонт</h4><p>Большинство работ выполняем в день обращения без потери качества.</p></div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-icon">💰</div>
+        <div><h4>Честные цены</h4><p>Фиксированная смета до начала работ. Никаких скрытых доплат.</p></div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-icon">👨‍🔧</div>
+        <div><h4>Опытные мастера</h4><p>Специалисты с сертификатами и опытом работы от 10 лет.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+  <div class="section-header reveal">
+    <span class="section-tag">ГАЛЕРЕЯ</span>
+    <h2>Наши <span class="gradient-text">работы</span></h2>
+    <p>Примеры выполненных проектов</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item reveal">
+      <img src="https://images.pexels.com/photos/3806288/pexels-photo-3806288.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Ремонт автомобиля" loading="lazy">
+      <div class="gallery-overlay"><span>Ремонт двигателя</span></div>
+    </div>
+    <div class="gallery-item reveal">
+      <img src="https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Интерьер автосервиса" loading="lazy">
+      <div class="gallery-overlay"><span>Наш сервисный центр</span></div>
+    </div>
+    <div class="gallery-item reveal">
+      <img src="https://images.pexels.com/photos/3807277/pexels-photo-3807277.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Механик под автомобилем" loading="lazy">
+      <div class="gallery-overlay"><span>Кузовной ремонт</span></div>
+    </div>
+    <div class="gallery-item reveal">
+      <img src="https://images.pexels.com/photos/13065690/pexels-photo-13065690.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Автомобиль в гараже" loading="lazy">
+      <div class="gallery-overlay"><span>Тюнинг и доработки</span></div>
+    </div>
+    <div class="gallery-item reveal">
+      <img src="https://images.pexels.com/photos/3806249/pexels-photo-3806249.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Диагностика автомобиля" loading="lazy">
+      <div class="gallery-overlay"><span>Компьютерная диагностика</span></div>
+    </div>
+    <div class="gallery-item reveal">
+      <img src="https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Полировка кузова автомобиля" loading="lazy">
+      <div class="gallery-overlay"><span>Полировка и покраска</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section section-alt" id="pricing">
+  <div class="section-header reveal">
+    <span class="section-tag">ЦЕНЫ</span>
+    <h2>Популярные <span class="gradient-text">пакеты</span></h2>
+    <p>Прозрачные цены без сюрпризов</p>
+  </div>
+  <div class="pricing-grid">
+    <div class="price-card reveal">
+      <h3>Базовый</h3>
+      <div class="price"><span class="currency">₽</span>4 900</div>
+      <ul>
+        <li>✓ Замена масла</li>
+        <li>✓ Замена фильтров</li>
+        <li>✓ Базовая диагностика</li>
+        <li>✓ Проверка жидкостей</li>
+      </ul>
+      <a href="#contact" class="btn btn-outline" style="width:100%">Выбрать</a>
+    </div>
+    <div class="price-card featured reveal">
+      <div class="popular-badge">ПОПУЛЯРНОЕ</div>
+      <h3>Стандарт</h3>
+      <div class="price"><span class="currency">₽</span>9 900</div>
+      <ul>
+        <li>✓ Всё из базового</li>
+        <li>✓ Полная диагностика</li>
+        <li>✓ Замена тормозных колодок</li>
+        <li>✓ Шиномонтаж</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary" style="width:100%">Выбрать</a>
+    </div>
+    <div class="price-card reveal">
+      <h3>Премиум</h3>
+      <div class="price"><span class="currency">₽</span>19 900</div>
+      <ul>
+        <li>✓ Всё из стандарта</li>
+        <li>✓ Чип-тюнинг</li>
+        <li>✓ Полировка кузова</li>
+        <li>✓ Гарантия 2 года</li>
+      </ul>
+      <a href="#contact" class="btn btn-outline" style="width:100%">Выбрать</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="section-header reveal">
+    <span class="section-tag">ОТЗЫВЫ</span>
+    <h2>Что говорят <span class="gradient-text">клиенты</span></h2>
+  </div>
+  <div class="testimonials-track">
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      <p>"Отличный сервис! Ремонт двигателя сделали за 2 дня, всё работает как часы. Цены адекватные."</p>
+      <div class="author"><div class="avatar">А</div><div><strong>Алексей М.</strong><span>BMW X5</span></div></div>
+    </div>
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      <p>"Профессионалы своего дела. Тюнинг сделали идеально, машина едет как никогда лучше!"</p>
+      <div class="author"><div class="avatar">М</div><div><strong>Мария К.</strong><span>Audi RS7</span></div></div>
+    </div>
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      <p>"Обращаюсь не первый раз. Всегда быстро, качественно и с гарантией. Рекомендую всем!"</p>
+      <div class="author"><div class="avatar">Д</div><div><strong>Дмитрий С.</strong><span>Mercedes AMG</span></div></div>
+    </div>
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      <p>"Лучший автосервис в городе! Чип-тюнинг добавил реально ощутимую мощность."</p>
+      <div class="author"><div class="avatar">И</div><div><strong>Иван П.</strong><span>Porsche 911</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-alt">
+  <div class="section-header reveal">
+    <span class="section-tag">FAQ</span>
+    <h2>Частые <span class="gradient-text">вопросы</span></h2>
+  </div>
+  <div class="faq">
+    <div class="faq-item reveal">
+      <div class="faq-question">Сколько времени занимает ремонт?<span class="faq-icon">+</span></div>
+      <div class="faq-answer"><p>Зависит от сложности: замена масла — 30 минут, ремонт двигателя — от 1 до 3 дней. Точные сроки сообщаем после диагностики.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-question">Даёте ли гарантию на работы?<span class="faq-icon">+</span></div>
+      <div class="faq-answer"><p>Да, на все виды работ даём гарантию от 6 месяцев до 2 лет в зависимости от услуги.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-question">Можно ли приехать со своими запчастями?<span class="faq-icon">+</span></div>
+      <div class="faq-answer"><p>Да, можно. Но гарантия на работу в этом случае действует только на саму работу, не на детали.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-question">Работаете ли с иномарками?<span class="faq-icon">+</span></div>
+      <div class="faq-answer"><p>Работаем со всеми марками: BMW, Mercedes, Audi, Porsche, Toyota, VW, Ford и другими.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-content reveal">
+    <h2>Готовы доверить нам свой <span class="gradient-text">автомобиль?</span></h2>
+    <p>Запишитесь онлайн — получите скидку 10% на первый визит</p>
+    <a href="#contact" class="btn btn-primary btn-pulse">Записаться сейчас</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="section-header reveal">
+    <span class="section-tag">КОНТАКТЫ</span>
+    <h2>Свяжитесь с <span class="gradient-text">нами</span></h2>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div><strong>Адрес</strong><p>г. Москва, ул. Автомобильная, 15</p></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div><strong>Телефон</strong><p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div><strong>Email</strong><p><a href="mailto:info@redline.ru">info@redline.ru</a></p></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">🕒</div>
+        <div><strong>Часы работы</strong><p>Пн–Вс: 9:00 – 21:00</p></div>
+      </div>
+    </div>
+    <form class="contact-form reveal" id="contactForm">
+      <input type="text" placeholder="Ваше имя" required />
+      <input type="tel" placeholder="Телефон" required />
+      <select required>
+        <option value="">Выберите услугу</option>
+        <option>Ремонт двигателя</option>
+        <option>Тюнинг</option>
+        <option>Диагностика</option>
+        <option>Кузовной ремонт</option>
+        <option>Шиномонтаж</option>
+        <option>Плановое ТО</option>
+      </select>
+      <textarea rows="4" placeholder="Комментарий (необязательно)"></textarea>
+      <button type="submit" class="btn btn-primary" style="width:100%">Отправить заявку</button>
+      <p class="form-success" id="formSuccess">✓ Заявка отправлена! Мы свяжемся с вами.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <a href="#" class="logo">RED<span>LINE</span></a>
+      <p>Премиум автосервис с 2010 года. Ремонт, тюнинг и обслуживание автомобилей.</p>
+    </div>
+    <div>
+      <h4>Услуги</h4>
+      <a href="#services">Ремонт двигателя</a>
+      <a href="#services">Тюнинг</a>
+      <a href="#services">Диагностика</a>
+      <a href="#services">Кузовной ремонт</a>
+    </div>
+    <div>
+      <h4>Компания</h4>
+      <a href="#why">О нас</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#pricing">Цены</a>
+      <a href="#contact">Контакты</a>
+    </div>
+    <div>
+      <h4>Соцсети</h4>
+      <a href="#">Instagram</a>
+      <a href="#">Telegram</a>
+      <a href="#">VK</a>
+      <a href="#">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 RED LINE. Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
